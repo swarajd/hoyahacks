@@ -79,7 +79,7 @@ socket.on('unlockhouse', function(data) {
         if (correctPhone) {
             console.log('this phone is valid');
             myOnboardLed.write(correctPhone?1:0);
-            sleep(2);
+            sleep.sleep(2);
             myOnboardLed.write(0);
         } else {
             console.log('this phone is not valid');
